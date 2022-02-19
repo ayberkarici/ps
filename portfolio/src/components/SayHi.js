@@ -9,8 +9,7 @@ const SayHi = () => {
             </a>
             <div className="sectionInsideSeperator"></div>
             <p>
-                I love designing things. And also love
-                expressing myself with using colors and layers.
+                I love designing things. Don't hesite to get in touch!
             </p>
             <div className="socials">
                 <a href="https://www.instagram.com/ayberkaricci">

@@ -61,6 +61,20 @@
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 600px) {
+  .letsMeetBox {
+    flex-direction: row !important;
+    justify-content: center !important;
+    align-items: center !important;
+
+    span {
+        font-size: 6rem !important;
+        &:last-child {
+            margin-left: 1.6rem;
+        }
+    }
+  }
+}
 @media only screen and (min-width: 768px) {
   .letsMeetBox {
     flex-direction: row !important;
@@ -70,7 +84,7 @@
     span {
         font-size: 8rem !important;
         &:last-child {
-            margin-left: 1rem;
+            margin-left: 2rem;
         }
     }
   }
