@@ -1,6 +1,5 @@
 import React, { useEffect }  from "react";
 import profilePhoto from "../assets/img/profile.jpg";
-import "animate.css";
 
 export const BriefLanding = (props) => {    
 
