@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import "normalize.css";
 import "./scss/App.scss";
 import Header from "./components/Header.js";
 import BriefLanding from "./components/BriefLanding";
