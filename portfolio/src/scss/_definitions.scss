@@ -1,0 +1,12 @@
+.italic {
+    font-style: italic;
+}
+
+.deActivate {
+    display: none;
+    transition: all .3s ease;
+}
+
+.activate {
+    transition: all .3s ease;
+}

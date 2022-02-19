@@ -1,0 +1,115 @@
+.workHero {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+
+    margin: 1rem 0rem 1.5rem;
+    width: 100%;
+    height: fit-content;
+    border-radius: 12px;
+    background-color: rgba(255, 255, 255, 0.15);
+    padding: 0.4rem;
+    padding-bottom: 0;
+    border: 1px solid transparent;
+    transition: border .2s cubic-bezier(0.77, 0, 0.175, 1), box-shadow .2s cubic-bezier(0.77, 0, 0.175, 1);
+
+    p {
+        font-weight: 400;
+    }
+
+    a {
+        cursor: pointer;
+
+    }
+
+    span {
+        color: $writingColor2;
+    }
+
+    .title {
+        font-size: 2rem;
+        font-weight: 800;
+        display: inline-block;
+        position: relative;
+        margin-bottom: 0.5rem;
+
+        a {
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .title::before,
+    .subTitle::before {
+        content: "";
+        width: 4px;
+        height: 100%;
+        background-color: $neonPurple;
+        position: absolute;
+        left: -1rem;
+        top: 0px;
+        border-radius: 999px;
+    }
+
+    .subTitle {
+        margin: 1rem 0 0.4rem;
+        font-weight: 600;
+        position: relative;
+    }
+
+    li {
+        display: flex;
+        align-items: center;
+        justify-content: leftcenter;
+        font-size: 1.2rem;
+        font-weight: 500;
+        position: relative;
+        transform: translateX(1rem);
+
+        &::after {
+            content: "";
+            position: absolute;
+            left: -1rem;
+            width: 12px;
+            height: 4px;
+            background-color: $neonPurple;
+            border-radius: 999px;
+        }
+    }
+
+    .goWorkButtonHref {
+        width: 100%;
+        text-decoration: none;
+    }
+
+    .goWorkButton {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        background-color: $neonPurple;
+        margin-top: 1rem;
+        width: calc(100% + 0.8rem);
+        height: 4rem;
+        border-radius: 0 0 12px 12px;
+        transform: translateX(-0.4rem);
+        color: white;
+        
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .workHero {
+        margin: 0rem 0rem 2rem !important;
+
+        &:hover {
+            border: 1px solid rgba(255, 255, 255, 0.349);
+            box-shadow: $shadow-lg;
+        }
+    }
+}

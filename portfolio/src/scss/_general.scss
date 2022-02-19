@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: $writingColor;
+}
+
+body {
+  background-color: $bgColor;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.sectionInsideSeperator {
+  width: 20%;
+  height: 4px;
+  border-radius: 999px;
+  background-color: $neonPurple;
+  margin: .5rem 0 ;
+}

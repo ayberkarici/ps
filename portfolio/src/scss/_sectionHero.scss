@@ -1,0 +1,74 @@
+.section {
+    width: calc(100% - 2rem);
+    min-height: 1vh;
+    padding: 1rem;
+    background-color: $bgCard;
+    box-shadow: $shadow-lg;
+    margin: 1rem;
+    margin-bottom: 2rem;
+    position: relative;
+    font-size: 1.4rem;
+    border-radius: 1rem;
+
+    .sectionTitle {
+        position: absolute;
+        font-size: 6rem;
+        font-weight: 800;
+        top: -5.2rem;
+        left: 0rem;
+    }
+
+    .bowl {
+        width: 100%;
+        height: fit-content;
+        background-color: rgba(255, 255, 255, 0.12);
+        padding: 0.5rem 1rem;
+        border-radius: 0.4rem;
+        margin-top: 1rem;
+
+        .emojiSign {
+            display: inline-block;
+            font-size: 2rem;
+            margin-right: 6px;
+        }
+
+        span {
+            color: $writingColor2;
+        }
+    }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .section {
+        max-width: 32rem;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .section {
+        max-width: 40rem;
+        padding: 4rem 4rem;
+
+    }
+    .sectionTitle {
+        position: absolute;
+        font-size: 8rem !important;
+        font-weight: 800;
+        top: -7rem !important;
+        left: 0rem;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}

@@ -1,0 +1,56 @@
+.sectionContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+}
+.sectionTray {
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: 1fr; // Responsive
+    row-gap: 4rem;
+}
+.mainSection {
+    position: relative;
+    background-color: $writingColor;
+    width: 100%;
+    height: auto;
+
+    h1,
+    p {
+        color: $writingColor2;
+    }
+
+    p {
+        font-weight: 600;
+    }
+    span {
+        color: $bgColor;
+    }
+    & svg:first-child {
+        transform: translateY(-1px);
+    }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .sectionTray {
+        margin-top: 4rem !important;
+        row-gap: 8rem !important;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+}
