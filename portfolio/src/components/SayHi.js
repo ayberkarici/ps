@@ -9,7 +9,7 @@ const SayHi = () => {
             </a>
             <div className="sectionInsideSeperator"></div>
             <p>
-                I love designing things. Don't hesite to get in touch!
+                I love designing things. Don't hesite to get in touch! And let me know what you think!
             </p>
             <div className="socials">
                 <a href="https://www.instagram.com/ayberkaricci">
