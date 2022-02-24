@@ -15,6 +15,7 @@
     overflow: hidden;
     border: 6px solid $neonYellow;
     box-shadow: $shadow-xl;
+    user-select: none;
   }
 
   img {

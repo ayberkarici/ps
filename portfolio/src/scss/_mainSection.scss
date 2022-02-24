@@ -28,8 +28,17 @@
     span {
         color: $bgColor;
     }
+
+    .svg {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: calc(100% + 10px);
+        height: fit-content;
+    }
     & svg:first-child {
         transform: translateY(-1px);
+        width: calc(100% + 10px) !important;
     }
 }
 

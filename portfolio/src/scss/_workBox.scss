@@ -11,8 +11,7 @@
     background-color: rgba(255, 255, 255, 0.15);
     padding: 0.4rem;
     padding-bottom: 0;
-    border: 1px solid transparent;
-    transition: border .2s cubic-bezier(0.77, 0, 0.175, 1), box-shadow .2s cubic-bezier(0.77, 0, 0.175, 1);
+    transition: border .2s cubic-bezier(0.77, 0, 0.175, 1), box-shadow .2s cubic-bezier(0.77, 0, 0.175, 1), border-radius .2s cubic-bezier(0.77, 0, 0.175, 1);
 
     p {
         font-weight: 400;
@@ -106,10 +105,14 @@
 @media only screen and (min-width: 768px) {
     .workHero {
         margin: 0rem 0rem 2rem !important;
+        border-radius: 6px !important;
+        .goWorkButton {
+            border-radius: 0px 0px 6px 6px !important;
+            
+        }
 
         &:hover {
-            border: 1px solid rgba(255, 255, 255, 0.349);
-            box-shadow: $shadow-lg;
+            box-shadow: 8px 10px 0px 0px $neonYellow;
         }
     }
 }

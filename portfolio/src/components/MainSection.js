@@ -9,13 +9,15 @@ import SayHi from "../components/SayHi";
 const MainSection = () => {
     return (
         <div className="mainSection">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-                <path
-                    fill="#252a34"
-                    fill-opacity="1"
-                    d="M0,96L1440,256L1440,0L0,0Z"
-                ></path>
-            </svg>
+            <div className="svg">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                    <path
+                        fill="#252a34"
+                        fill-opacity="1"
+                        d="M0,96L1440,256L1440,0L0,0Z"
+                    ></path>
+                </svg>
+            </div>
             <div className="sectionTray">
                 <SectionHero title="Story.">
                     <Substance emoji="👀">
@@ -31,8 +33,8 @@ const MainSection = () => {
                         I started Web Development and did some projects
                     </Substance>
                     <Substance emoji="📖">
-                        I started to go to university (Marmara Univ. Industrial
-                        Engineering, English)
+                        I came to Istanbul and started university. (Marmara
+                        Univ. Industrial Engineering, English)
                     </Substance>
                 </SectionHero>
                 <SectionHero title="Skills.">
@@ -64,7 +66,7 @@ const MainSection = () => {
                     />
                     <Work
                         title="DoForU (simple to-do app)"
-                        desc="It is a simple to-do list app. I used Google's Firebase to authentication and realtime database. Also this is one of my early works on UI design and Google's Firebase."
+                        desc="It is a simple to-do list app. I used Google's Firebase to authentication and realtime database. Please focus on auth operations and real-time database. PHP can has some errors."
                         techs={[
                             { name: "HTML5" },
                             { name: "CSS3" },
@@ -76,8 +78,8 @@ const MainSection = () => {
                         link="https://doforu.herokuapp.com/"
                     />
                     <Work
-                        title="Simple Pricer (no-responsive)"
-                        desc="This one is first version of WoodluckTR Table Center. It is not supported for small sized devices like phones."
+                        title="Simple Pricer"
+                        desc="This one is first version of WorldClassWoods Table Center."
                         techs={[
                             { name: "HTML5" },
                             { name: "CSS3" },
@@ -95,7 +97,6 @@ const MainSection = () => {
                         ]}
                         link="https://recipe-appz.vercel.app/"
                     />
-                    <br />
                     to be continued...
                 </SectionHero>
                 <SectionHero title="Say hi.">

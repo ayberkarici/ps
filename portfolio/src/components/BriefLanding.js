@@ -7,7 +7,7 @@ export const BriefLanding = (props) => {
   return (
     <div className="briefLanding">
       <div className="photoBox animate__animated animate__fadeIn animate__slower">
-        <img src={profilePhoto} alt="profilePhoto"></img>
+        <img src={profilePhoto} alt="profile photo (code:handsome)"></img>
       </div>
       <div className="landingQuote animate__animated animate__fadeInDown animate__delay-0-5s">
         <p>
