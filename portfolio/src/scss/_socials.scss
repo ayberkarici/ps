@@ -23,8 +23,9 @@
 }
 .socials {
     display: flex;
-    align-items: center;
-    margin-top: 1.5rem;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-top: 1rem;
 
     
     &Button {
