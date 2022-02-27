@@ -1,14 +1,31 @@
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
+import {
+    BrowserRouter as Router,
+    Route,
+    Routes,
+    useLocation,
+} from "react-router-dom";
+
 import "./scss/App.scss";
 import Header from "./components/Header.js";
-import BriefLanding from "./components/BriefLanding";
-import MainSection from "./components/MainSection";
+import BriefLanding from "./pages/BriefLanding";
+import Movies from "./pages/Movies";
 import Footer from "./components/Footer";
 
 function App() {
     useEffect(() => {
-        document.title = "Ayberk Arıcı | Personal Site"
-     }, []);
+        document.title = "Ayberk Arıcı | Personal Site";
+        console.log(window.location.pathname);
+
+    }, []);
+
+    const [currLocation, setCurrLocaiton] = useState("/") ; 
+
+    useEffect(() => {
+        setCurrLocaiton(window.location.pathname);
+    }, [window.location.pathname])
+
+
     const [windowPos, setWindowPos] = useState(true);
 
     const scrolled = () => {
@@ -22,12 +39,19 @@ function App() {
     window.addEventListener("scroll", scrolled);
 
     return (
-        <div className="App">
-            <Header windowPos={windowPos} />
-            <BriefLanding windowPos={windowPos} />
-            <MainSection />
-            <Footer />
-        </div>
+        <Router>
+            <div className="App">
+                <Header windowPos={windowPos} />
+                <Routes>
+                    <Route
+                        path="/"
+                        element={<BriefLanding windowPos={windowPos} />}
+                    />
+                    <Route path="/movies" element={<Movies />} />
+                </Routes>
+                <Footer currLocation={currLocation} />
+            </div>
+        </Router>
     );
 }
 

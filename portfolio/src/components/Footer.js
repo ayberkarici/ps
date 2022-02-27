@@ -1,8 +1,8 @@
 import React from 'react'
 
-const Footer = () => {
+const Footer = (props) => {
   return (
-    <div className='footer'><span>{"</> by Ayberk Arıcı"}</span></div>
+    <div className={props.currLocation == '/' ? 'footer ' : 'footer footerBgDark '}><span>{"</> by Ayberk Arıcı"}</span></div>
   )
 }
 

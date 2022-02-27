@@ -1,0 +1,112 @@
+.movieCards {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-row-gap: 2rem;
+    grid-column-gap: .2vw;
+
+    position: relative;
+
+    width: 100%;
+    height: fit-content;
+    margin-top: 4rem;
+}
+
+.card {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+
+    height: fit-content;
+    border-radius: 4px;
+    overflow: hidden;
+    cursor: pointer;
+
+    &:nth-child(10) {
+        span {
+            font-size: 11.5rem;
+            letter-spacing: -1.2rem;
+            right: 4.5rem;
+        }
+    }
+
+    &Number {
+        user-select: none;
+        display: flex;
+        align-items: center;
+        justify-content: right;
+
+        width: 100%;
+
+        font-size: 14.6rem;
+
+        span {
+            position: absolute;
+            right: 5.4rem;
+            font-weight: 800;
+            color: $transparentGray;
+        }
+    }
+
+    &Image {
+        user-select: none;
+        width: 100%;
+        z-index: 2;
+    }
+    
+    img {
+        height: 100%;
+        width: 100%;
+        border-radius: 0px 4px 4px 0px;
+    }
+}
+
+.shadowCard {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.822);
+    z-index: 10;
+    opacity: 0;
+}
+
+.seeDetailsButton {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: .5rem;
+    right: 1rem;
+    
+    width: 2rem;
+    height: 2rem;
+    border-radius: 999px;
+    border: 2px solid $transparentGray;
+
+    &::after {
+        content: '';
+        width: .6rem;
+        height: 2px;
+        border-radius: 999px;
+        background-color: $transparentGray;
+        transform: rotateZ(-45deg) translateX(-3px);
+    }
+    
+    &::before {
+        content: '';
+        width: .6rem;
+        height: 2px;
+        border-radius: 999px;
+        background-color: $transparentGray;
+        transform: rotateZ(45deg) translateX(3px) ;
+        
+    }
+}

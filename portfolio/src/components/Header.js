@@ -3,7 +3,8 @@ import "animate.css";
 
 function Header(props) {
     return (
-        <div
+        <header 
+            role="banner"
             className={
                 props.windowPos
                     ? "banner animate__animated animate__fadeIn"
@@ -16,7 +17,7 @@ function Header(props) {
             <span className="subTitle code animate__animated animate__fadeIn">
                 personal site
             </span>
-        </div>
+        </header>
     );
 }
 

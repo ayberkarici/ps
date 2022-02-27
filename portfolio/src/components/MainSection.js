@@ -12,9 +12,9 @@ const MainSection = () => {
             <div className="svg">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
                     <path
-                        fill="#252a34"
-                        fill-opacity="1"
-                        d="M0,96L1440,256L1440,0L0,0Z"
+                        fill="#16181f"
+                        fillOpacity="1"
+                        d="M0,96L1442,256L1442,0L0,0Z"
                     ></path>
                 </svg>
             </div>
