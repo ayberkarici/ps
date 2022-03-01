@@ -29,7 +29,6 @@ const MovieCard = (props) => {
             });
     }, []);
 
-    console.log(movie);
 
     const [detail, setDetail] = useState(false);
 
@@ -39,6 +38,7 @@ const MovieCard = (props) => {
 
     return (
         <>
+
             <div
                 className="card"
                 onMouseEnter={(e) => handleDetail(e)}
@@ -47,13 +47,12 @@ const MovieCard = (props) => {
                 onTouchEnd={(e) => handleDetail(e)}
             >
                 {movie.name == undefined && <SkeletonLarge />}
-                {movie.name && (
+                {movie.image && (
                     <>
                         <div className="cardNumber">
                             <span>{props.number}</span>
                         </div>
-                        <div className="cardImage">
-                            <img alt={movie.name} src={movie.image} />
+                        <div className="cardImage" style={{backgroundImage : "url(" + movie.image + ")"}}>
                         </div>
                         <div
                             className="shadowCard"
@@ -61,14 +60,8 @@ const MovieCard = (props) => {
                                 opacity: detail ? 1 : 0,
                             }}
                         >
-                            <div
-                                className={
-                                    detail
-                                        ? "single-chart animate__animated animate__zoomIn"
-                                        : "single-chart"
-                                }
-                            >
-                            <RankWheel rank={props.rank} detail={detail} />
+                            <div className="single-chart">
+                                <RankWheel rank={props.rank} detail={detail} />
                             </div>
                             <div
                                 className={

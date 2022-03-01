@@ -3,7 +3,6 @@ import {
     BrowserRouter as Router,
     Route,
     Routes,
-    useLocation,
 } from "react-router-dom";
 
 import "./scss/App.scss";
@@ -11,6 +10,7 @@ import Header from "./components/Header.js";
 import BriefLanding from "./pages/BriefLanding";
 import Movies from "./pages/Movies";
 import Footer from "./components/Footer";
+import MovieDetail from "./components/MovieDetail";
 
 function App() {
     useEffect(() => {
@@ -47,7 +47,9 @@ function App() {
                         path="/"
                         element={<BriefLanding windowPos={windowPos} />}
                     />
-                    <Route path="/movies" element={<Movies />} />
+                    <Route path="/movies" element={<Movies />}>
+                        <Route  path=":id"  element={<MovieDetail />} />
+                    </Route>
                 </Routes>
                 <Footer currLocation={currLocation} />
             </div>

@@ -5,16 +5,15 @@
 
     width: 100vw;
     height: fit-content;
-
+    
     .movies {
         display: flex;
         align-items: flex-start;
         justify-content: flex-start;
         flex-direction: column;
-
-        max-width: 1270px;
+        
         min-height: fit-content;
-        margin-top: 7rem;
+        margin: 7rem 2rem 0rem;
         color: $writingColor;
 
         h1 {
@@ -32,3 +31,32 @@
         }
     }
 }
+
+@media only screen and (max-width: 600px) {}
+
+@media only screen and (min-width: 600px) {
+    .movies {
+        width: 550px;
+        margin-right: 1.5rem !important;
+        margin-left: 1.5rem !important;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .movies {
+        width: 650px;
+    }
+}
+
+@media only screen and (min-width: 1130px) {
+    .movies {
+        width: 1070px;
+    }
+}
+
+@media only screen and (min-width: 1300px) {
+    .movies {
+        width: 1270px;
+    }
+}
+

@@ -1,33 +1,32 @@
 .movieCards {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-row-gap: 2rem;
-    grid-column-gap: .2vw;
+    grid-column-gap: 0.2vw;
 
     position: relative;
 
-    width: 100%;
     height: fit-content;
+    width: 100%;
     margin-top: 4rem;
 }
 
 .card {
     position: relative;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1.1fr;
     grid-template-rows: 1fr;
 
-    height: fit-content;
+    width: 100%;
+    height: 182.08px;
     border-radius: 4px;
     overflow: hidden;
     cursor: pointer;
 
     &:nth-child(10) {
         span {
-            font-size: 11.5rem;
+            font-size: 12rem;
             letter-spacing: -1.2rem;
             right: 4.5rem;
+            top: -1.5rem;
         }
     }
 
@@ -39,11 +38,11 @@
 
         width: 100%;
 
-        font-size: 14.6rem;
-
         span {
+            font-size: 15.5rem;
             position: absolute;
-            right: 5.4rem;
+            top: -3.5rem;
+
             font-weight: 800;
             color: $transparentGray;
         }
@@ -52,13 +51,12 @@
     &Image {
         user-select: none;
         width: 100%;
+        height: auto;
         z-index: 2;
-    }
-    
-    img {
-        height: 100%;
-        width: 100%;
-        border-radius: 0px 4px 4px 0px;
+        background-repeat: no-repeat;
+        background-color: black;
+        background-position: center;
+        background-size: cover;
     }
 }
 
@@ -83,30 +81,168 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    top: .5rem;
+    top: 0.5rem;
     right: 1rem;
-    
+
     width: 2rem;
     height: 2rem;
     border-radius: 999px;
     border: 2px solid $transparentGray;
 
     &::after {
-        content: '';
-        width: .6rem;
+        content: "";
+        width: 0.6rem;
         height: 2px;
         border-radius: 999px;
         background-color: $transparentGray;
         transform: rotateZ(-45deg) translateX(-3px);
     }
-    
+
     &::before {
-        content: '';
-        width: .6rem;
+        content: "";
+        width: 0.6rem;
         height: 2px;
         border-radius: 999px;
         background-color: $transparentGray;
-        transform: rotateZ(45deg) translateX(3px) ;
-        
+        transform: rotateZ(45deg) translateX(3px);
+    }
+
+    &:hover {
+        border: 2px solid $writingColor;
+        &::after {
+            background-color: $writingColor;
+        }
+        &::before {
+            background-color: $writingColor;
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .movieCards {
+        position: relative;
+    }
+    .card {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        grid-template-columns: none;
+        grid-template-rows: none;
+
+        width: 100%;
+        height: 30rem;
+        margin-bottom: 1rem;
+
+        &Image {
+            width: 100%;
+            height: 100%;
+        }
+
+        &Number {
+            display: none;
+        }
+    }
+}
+
+@media only screen and (min-width: 603px) {
+    .movieCards {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        grid-row-gap: 0.5rem;
+    }
+    .card {
+        height: 14rem;
+        &:nth-child(10) {
+            span {
+                font-size: 12.5rem;
+                top: -0.5rem;
+                right: 4.6rem;
+            }
+        }
+
+        &Number {
+            span {
+                font-size: 15rem;
+                top: -2.4rem;
+                right: 6.4rem;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .movieCards {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-row-gap: 1.5rem;
+    }
+    .card {
+        height: 10rem;
+        &:nth-child(10) {
+            span {
+                font-size: 10rem;
+                top: -1rem;
+                right: 4.3rem;
+            }
+        }
+
+        &Number {
+            span {
+                font-size: 12.3rem;
+                top: -2.4rem;
+                right: 4.7rem;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1130px) {
+    .movieCards {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-row-gap: 1.5rem;
+    }
+    .card {
+        height: 182.08px;
+        &:nth-child(10) {
+            span {
+                font-size: 11.5rem;
+                right: 5rem;
+            }
+        }
+
+        &Number {
+            span {
+                font-size: 14.8rem;
+                top: -3.3rem;
+                right: 6rem;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1300px) {
+    .movieCards {
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-row-gap: 2rem;
+    }
+    .card {
+        height: 182.08px;
+        &:nth-child(10) {
+            span {
+                font-size: 12rem;
+                right: 4.5rem;
+            }
+        }
+
+        &Number {
+            span {
+                font-size: 15.5rem;
+                top: -3.5rem;
+                right: 5.4rem;
+            }
+        }
     }
 }
