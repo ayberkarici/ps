@@ -9,7 +9,7 @@ const Movies = () => {
                 <p>
                     I love movies. I love watching them, criticizing them and
                     talking about them. Here are the most important ones for me.{" "}
-                    <br /> (List is up to date)
+                    (List is up to date) <br />  - Tap on it for details
                 </p>
                 <div className="movieCards">
                     <MovieCard number="1" rank="9.7" name="The Godfather" />

@@ -29,7 +29,6 @@ const MovieCard = (props) => {
             });
     }, []);
 
-
     const [detail, setDetail] = useState(false);
 
     function handleDetail(e) {
@@ -38,9 +37,8 @@ const MovieCard = (props) => {
 
     return (
         <>
-
             <div
-                className="card"
+                className={movie.image ? "card animate__animated animate__fadeIn" : "card" }
                 onMouseEnter={(e) => handleDetail(e)}
                 onMouseLeave={(e) => handleDetail(e)}
                 onTouchStart={(e) => handleDetail(e)}
@@ -52,17 +50,18 @@ const MovieCard = (props) => {
                         <div className="cardNumber">
                             <span>{props.number}</span>
                         </div>
-                        <div className="cardImage" style={{backgroundImage : "url(" + movie.image + ")"}}>
-                        </div>
+                        <div
+                            className="cardImage"
+                            style={{
+                                backgroundImage: "url(" + movie.image + ")",
+                            }}
+                        ></div>
                         <div
                             className="shadowCard"
                             style={{
                                 opacity: detail ? 1 : 0,
                             }}
                         >
-                            <div className="single-chart">
-                                <RankWheel rank={props.rank} detail={detail} />
-                            </div>
                             <div
                                 className={
                                     detail
@@ -72,6 +71,10 @@ const MovieCard = (props) => {
                             >
                                 {" "}
                             </div>
+                            <div className="single-chart">
+                                <RankWheel rank={props.rank} detail={detail} />
+                            </div>
+                            <div className="imdbRank">IMDb / {movie.aggregateRating.ratingValue}</div>
                         </div>{" "}
                     </>
                 )}

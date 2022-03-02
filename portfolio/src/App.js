@@ -15,8 +15,6 @@ import MovieDetail from "./components/MovieDetail";
 function App() {
     useEffect(() => {
         document.title = "Ayberk Arıcı | Personal Site";
-        console.log(window.location.pathname);
-
     }, []);
 
     const [currLocation, setCurrLocaiton] = useState("/") ; 

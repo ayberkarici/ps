@@ -5,6 +5,8 @@ import SkillBox from "../components/SkillBox";
 import Skill from "../components/Skill";
 import Work from "../components/Work";
 import SayHi from "../components/SayHi";
+import Favs from "./Favs";
+import { useLocation } from "react-router-dom";
 
 const MainSection = () => {
     return (
@@ -98,6 +100,13 @@ const MainSection = () => {
                         link="https://recipe-appz.vercel.app/"
                     />
                     to be continued...
+                </SectionHero>
+                <SectionHero title="Favs.">
+                    <Favs path="/movies">
+                        <h3>
+                            See the <span style={{color : "#fff700"}}>movies</span> that inspired me
+                        </h3>
+                    </Favs>
                 </SectionHero>
                 <SectionHero title="Say hi.">
                     <SayHi></SayHi>

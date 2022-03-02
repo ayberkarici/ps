@@ -1,9 +1,18 @@
-import React from 'react'
+import React, { useEffect, useState } from "react";
+import { useLocation } from "react-router-dom";
 
 const Footer = (props) => {
-  return (
-    <div className={props.currLocation == '/' ? 'footer ' : 'footer footerBgDark '}><span>{"</> by Ayberk Arıcı"}</span></div>
-  )
-}
+    let history = useLocation();
 
-export default Footer
+    return (
+        <div
+            className={
+                history.pathname == "/" ? "footer " : "footer footerBgDark "
+            }
+        >
+            <span>{"</> by Ayberk Arıcı"}</span>
+        </div>
+    );
+};
+
+export default Footer;

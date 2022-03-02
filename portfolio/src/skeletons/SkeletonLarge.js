@@ -4,8 +4,8 @@ const SkeletonLarge = () => {
     return (
         <svg
             role="img"
-            width="451.7"
-            height="382.08"
+            width="1000.7"
+            height="1000.08"
             aria-labelledby="loading-aria"
             viewBox="0 0 451.7 382.08"
             preserveAspectRatio="none"
@@ -21,7 +21,7 @@ const SkeletonLarge = () => {
             />
             <defs>
                 <clipPath id="clip-path">
-                    <rect x={0} y={0} rx={2} ry={2} width={500} height={500} />
+                    <rect x={0} y={0} rx={2} ry={2} width={1000} height={1000} />
                 </clipPath>
                 <linearGradient id="fill">
                     <stop offset="0.599964" stopColor="#707070" stopOpacity={1}>

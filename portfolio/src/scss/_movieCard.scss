@@ -68,52 +68,57 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.822);
     z-index: 10;
     opacity: 0;
-}
 
-.seeDetailsButton {
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    top: 0.5rem;
-    right: 1rem;
-
-    width: 2rem;
-    height: 2rem;
-    border-radius: 999px;
-    border: 2px solid $transparentGray;
-
-    &::after {
-        content: "";
-        width: 0.6rem;
-        height: 2px;
-        border-radius: 999px;
-        background-color: $transparentGray;
-        transform: rotateZ(-45deg) translateX(-3px);
+    .imdbRank {
+        color: $transparentGray;
     }
 
-    &::before {
-        content: "";
-        width: 0.6rem;
-        height: 2px;
-        border-radius: 999px;
-        background-color: $transparentGray;
-        transform: rotateZ(45deg) translateX(3px);
-    }
+    .seeDetailsButton {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: 0.5rem;
+        right: 1rem;
 
-    &:hover {
-        border: 2px solid $writingColor;
+        width: 2rem;
+        height: 2rem;
+        border-radius: 999px;
+        border: 2px solid $transparentGray;
+
         &::after {
-            background-color: $writingColor;
+            content: "";
+            width: 0.6rem;
+            height: 2px;
+            border-radius: 999px;
+            background-color: $transparentGray;
+            transform: rotateZ(-45deg) translateX(-3px);
         }
+
         &::before {
-            background-color: $writingColor;
+            content: "";
+            width: 0.6rem;
+            height: 2px;
+            border-radius: 999px;
+            background-color: $transparentGray;
+            transform: rotateZ(45deg) translateX(3px);
+        }
+
+        &:hover {
+            border: 2px solid $writingColor;
+            &::after {
+                background-color: $writingColor;
+            }
+            &::before {
+                background-color: $writingColor;
+            }
         }
     }
 }
@@ -150,6 +155,7 @@
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(5, 1fr);
         grid-row-gap: 0.5rem;
+        grid-column-gap: 0.5rem;
     }
     .card {
         height: 14rem;
@@ -176,6 +182,7 @@
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(4, 1fr);
         grid-row-gap: 1.5rem;
+        grid-column-gap: 0.2vw;
     }
     .card {
         height: 10rem;

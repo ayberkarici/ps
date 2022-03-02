@@ -1,0 +1,31 @@
+.favs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    width: 100%;
+    height: fit-content;
+
+    button {
+        text-decoration: none;
+        background-color: $neonPurple;
+        border: none;
+        border-radius: 6px;
+        padding: 1rem 3rem;
+        margin: 1rem 0rem .5rem;
+        cursor: pointer;
+        font-weight: 600;
+        transition: box-shadow 0.2s cubic-bezier(0.77, 0, 0.175, 1);
+
+        &:hover {
+            box-shadow: 6px 6px 0px 0px $neonYellow;
+        }
+    }
+}
+
+@media only screen and (max-width: 770px) {
+    .favs {
+        margin-top: 1.5rem;
+    }
+}
