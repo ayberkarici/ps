@@ -3,7 +3,7 @@
     align-items: center;
     justify-content: center;
 
-    width: 100vw;
+    width: 100%;
 }
 .sectionTray {
     margin-top: 3rem;
@@ -33,14 +33,13 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 100vw;
+        width: 100%;
         height: fit-content;
-    }
 
-    & svg:first-child {
+        svg {
         transform: translateY(-1px);
         width: 100%;
-    }
+    }}
 }
 
 /* Extra small devices (phones, 600px and down) */
