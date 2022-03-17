@@ -40,6 +40,10 @@
         user-select: none;
     }
 
+    .levelSign {
+        color: rgba(255, 255, 255, 0.548);
+    }
+
     span {
         color: $writingColor2;
         
@@ -52,5 +56,10 @@
         border-radius: 20px !important; 
         width: 80px !important;
         height: 80px !important; 
+    }
+    .skillBox {
+        span {
+            font-size: .8rem;
+        }
     }
 }

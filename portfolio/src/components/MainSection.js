@@ -41,15 +41,15 @@ const MainSection = () => {
                 </SectionHero>
                 <SectionHero title="Skills.">
                     <SkillBox>
-                        <Skill sign="H" title="HTML5"></Skill>
-                        <Skill sign="C" title="CSS3"></Skill>
-                        <Skill sign="J" title="JavaScript"></Skill>
-                        <Skill sign="R" title="ReactJS"></Skill>
-                        <Skill sign="UI" title="UI/UX"></Skill>
-                        <Skill sign="JQ" title="JQuery"></Skill>
-                        <Skill sign="P" title="PHP"></Skill>
-                        <Skill sign="M" title="MySQL"></Skill>
-                        <Skill sign="S" title="SCSS"></Skill>
+                        <Skill level="4.3/5" sign="H" title="HTML5"></Skill>
+                        <Skill level="4.5/5" sign="C" title="CSS3"></Skill>
+                        <Skill level="4/5" sign="J" title="JavaScript"></Skill>
+                        <Skill level="3.4/5" sign="R" title="ReactJS"></Skill>
+                        <Skill level="4.4/5" sign="UI" title="UI/UX"></Skill>
+                        <Skill level="3.6/5" sign="JQ" title="JQuery"></Skill>
+                        <Skill level="2.8/5" sign="P" title="PHP"></Skill>
+                        <Skill level="2/5" sign="M" title="MySQL"></Skill>
+                        <Skill level="4/5" sign="S" title="SCSS"></Skill>
                     </SkillBox>
                 </SectionHero>
                 <SectionHero title="Works.">

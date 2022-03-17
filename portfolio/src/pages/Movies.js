@@ -16,10 +16,10 @@ const Movies = () => {
                     <MovieCard number="2" rank="9.3" name="The Prestige" />
                     <MovieCard number="3" rank="9.1" name="Hobbit" />
                     <MovieCard number="4" rank="9" name="The Godfather Part II"/>
-                    <MovieCard number="5" rank="9" name="Harry Potter" />
+                    <MovieCard number="5" rank="9" name="Harry Potter and the prisoner of the azkaban" />
                     <MovieCard number="6" rank="9" name="Pulp Fiction" />
                     <MovieCard number="7" rank="8.9" name="American Beauty" />
-                    <MovieCard number="8" rank="8.9" name="Shining" />
+                    <MovieCard number="8" rank="8.9" name="The Shining" />
                     <MovieCard number="9" rank="8.8" name="Schindler's List" />
                     <MovieCard number="10" rank="8.7" name="Iron Man" />
                 </div>

@@ -11,7 +11,7 @@ const MovieCard = (props) => {
         let data = qs.stringify({ tt: props.name }); // props.query
         let config = {
             method: "post",
-            url: "https://betterimdbot.herokuapp.com/",
+            url: "http://betterimdbot.herokuapp.com/",
             headers: {
                 accept: "application/json",
                 "Content-Type": "application/x-www-form-urlencoded",
