@@ -35,6 +35,8 @@ const MovieCard = (props) => {
         e.type == "mouseleave" ? setDetail(false) : setDetail(!detail);
     }
 
+    console.log(movie);
+
     return (
         <>
             <div

@@ -6,7 +6,7 @@ const Skill = (props) => {
         <div className='skillImg'>
             {props.sign}
         </div>
-        <span className='skillTitle'>{props.title} • <span className='levelSign'>{props.level}</span> </span>
+        <span className='skillTitle'>{props.title} <br /> <span className='levelSign'>{props.level}</span> </span>
     </div>
   )
 }
