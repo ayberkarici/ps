@@ -23,19 +23,19 @@ const MainSection = () => {
             <div className="sectionTray">
                 <SectionHero title="Story.">
                     <Substance emoji="👀">
-                        I was born in Sakarya/Adapazarı
+                        Was born in Sakarya/Adapazarı
                     </Substance>
                     <Substance emoji="✏️">
-                        I went to Cumhuriyet Anatolian High School
+                        Went to Cumhuriyet Anatolian High School
                     </Substance>
                     <Substance emoji="🎨">
-                        I started making oil paints and pencil drawings
+                        Started making oil paints and pencil drawings
                     </Substance>
                     <Substance emoji="👨‍💻">
-                        I started Web Development and did some projects
+                        Started Web Development and did some projects
                     </Substance>
                     <Substance emoji="📖">
-                        I came to Istanbul and started university. (Marmara
+                        Came to Istanbul and started university. (Marmara
                         Univ. Industrial Engineering, English)
                     </Substance>
                 </SectionHero>
@@ -45,14 +45,31 @@ const MainSection = () => {
                         <Skill level="4.5/5" sign="C" title="CSS3"></Skill>
                         <Skill level="4/5" sign="J" title="JavaScript"></Skill>
                         <Skill level="3.4/5" sign="R" title="ReactJS"></Skill>
-                        <Skill level="4.4/5" sign="UI" title="UI/UX"></Skill>
+                        <Skill level="4.1/5" sign="UI" title="UI/UX"></Skill>
                         <Skill level="3.6/5" sign="JQ" title="JQuery"></Skill>
-                        <Skill level="2.8/5" sign="P" title="PHP"></Skill>
-                        <Skill level="2/5" sign="M" title="MySQL"></Skill>
+                        <Skill level="3.8/5" sign="D" title="Django"></Skill>
+                        <Skill level="3.9/5" sign="P" title="Python"></Skill>
                         <Skill level="4/5" sign="S" title="SCSS"></Skill>
                     </SkillBox>
                 </SectionHero>
                 <SectionHero title="Works.">
+                    <Work
+                        title="Aymar Local Market App"
+                        desc="
+                        A market application where you can place an order and track your order."
+                        techs={[
+                            { name: "Django" },
+                            { name: "Python" },
+                            { name: "HTML" },
+                            { name: "CSS3" },
+                            { name: "JavaScript" },
+                            { name: "JQuery" },
+                            { name: "Postgresql" },
+                            { name: "AWS" },
+                            { name: "Firebase" },
+                        ]}
+                        link="http://aymar.shop"
+                    />
                     <Work
                         title="WoodluckTR Table Center"
                         desc="
@@ -101,13 +118,15 @@ const MainSection = () => {
                     />
                     to be continued...
                 </SectionHero>
-                <SectionHero title="Favs.">
+                
+                {/* <SectionHero title="Favs.">
                     <Favs path="/movies">
                         <h3>
                             See the <span style={{color : "#fff700"}}>movies</span> that inspired me
                         </h3>
                     </Favs>
                 </SectionHero>
+                 */}
                 <SectionHero title="Say hi.">
                     <SayHi></SayHi>
                 </SectionHero>
